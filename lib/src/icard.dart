@@ -7,9 +7,25 @@ class ICard extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.indigo,
         body: SafeArea(
-          child: Container(),
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                SizedBox(width: double.infinity),
+                _avatar(),
+              ],
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+            ),
+          ),
         ),
       ),
+    );
+  }
+
+  Widget _avatar() {
+    return CircleAvatar(
+      backgroundImage: AssetImage("images/profile.png"),
+      radius: 55.0,
     );
   }
 }

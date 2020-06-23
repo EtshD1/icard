@@ -13,6 +13,8 @@ class ICard extends StatelessWidget {
                 SizedBox(width: double.infinity),
                 _avatar(),
                 _Title("MOHAMED HESHAM", "BebasNeue", 40.0, Colors.white),
+                _Title("MOBILE & WEB DEVELOPER", "SourceSansPro", 20.0,
+                    Color.fromARGB(200, 255, 255, 255), 1.0),
               ],
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,

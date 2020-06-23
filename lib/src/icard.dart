@@ -12,7 +12,7 @@ class ICard extends StatelessWidget {
               children: <Widget>[
                 SizedBox(width: double.infinity),
                 _avatar(),
-                _Name(),
+                _Title("MOHAMED HESHAM", "BebasNeue", 40.0, Colors.white),
               ],
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -30,15 +30,16 @@ class ICard extends StatelessWidget {
     );
   }
 
-  Widget _Name() {
+  Widget _Title(String title, String fontFamily, double fontSize, Color color,
+      [double letterSpacing = 0.0]) {
     return Text(
-      "MOHAMED HESHAM",
+      title,
       style: TextStyle(
-        fontFamily: "BebasNeue",
-        fontSize: 40.0,
-        fontWeight: FontWeight.bold,
-        color: Colors.white,
-      ),
+          fontFamily: fontFamily,
+          fontSize: fontSize,
+          fontWeight: FontWeight.bold,
+          color: color,
+          letterSpacing: letterSpacing),
     );
   }
 }

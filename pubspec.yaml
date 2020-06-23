@@ -18,3 +18,12 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+
+  fonts:
+    - family: BebasNeue
+      fonts:
+        - asset: fonts\BebasNeue-Regular.ttf
+
+    - family: SourceSansPro
+      fonts:
+        - asset: fonts\SourceSansPro-Regular.ttf

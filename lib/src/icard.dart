@@ -12,6 +12,7 @@ class ICard extends StatelessWidget {
               children: <Widget>[
                 SizedBox(width: double.infinity),
                 _avatar(),
+                _Name(),
               ],
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -26,6 +27,18 @@ class ICard extends StatelessWidget {
     return CircleAvatar(
       backgroundImage: AssetImage("images/profile.png"),
       radius: 55.0,
+    );
+  }
+
+  Widget _Name() {
+    return Text(
+      "MOHAMED HESHAM",
+      style: TextStyle(
+        fontFamily: "BebasNeue",
+        fontSize: 40.0,
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+      ),
     );
   }
 }
